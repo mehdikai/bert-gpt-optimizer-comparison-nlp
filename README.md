@@ -14,7 +14,7 @@ While testing, **SGD consistently yielded poor accuracy and instability** on the
   - Precision (Accuracy)
   - Training Stability
   - Resource Consumption (GPU/Memory/Time)
-- 🧪 Dataset: GLUE SST-2 (Stanford Sentiment Treebank v2)
+- 🧪 Dataset: GLUE SST-2 (Stanford Sentiment Treebank v2), SQuAD (Stanford Question Answering Dataset)
 
 ## 🧰 Requirements
 
