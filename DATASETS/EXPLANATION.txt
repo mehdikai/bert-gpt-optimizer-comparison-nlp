@@ -1,0 +1,34 @@
+Main Dataset: SST-2 (Stanford Sentiment Treebank v2)
+The SST-2 dataset, part of the GLUE benchmark, is designed for binary sentiment classification—identifying whether a sentence expresses a positive or negative sentiment. It is split into three standard subsets:
+
+Train (sst2_train.csv): Labeled data used to train the model.
+
+Validation (sst2_val.csv): Labeled data for tuning and monitoring performance during training.
+
+Test (sst2_test.csv): Unlabeled data reserved for final evaluation or leaderboard submission.
+
+For convenience and reproducibility, these splits can be combined into a single CSV file, with an added column indicating the data split (train, validation, test). This organization ensures a clean workflow for supervised learning, enabling robust training, fine-tuning, and fair evaluation of sentiment classification models.
+
+Secondary Dataset: SQuAD (Stanford Question Answering Dataset)
+The SQuAD v1.1 dataset is used for evaluating machine reading comprehension capabilities. It consists of passages from Wikipedia articles paired with crowd-sourced questions and answers. The dataset is divided into:
+
+Train (squad_train.csv): Contains a list of questions, corresponding context paragraphs, and ground truth answers with their character-level start positions.
+
+Validation (squad_validation.csv): Used to assess model generalization during development.
+
+Each sample in the CSV files includes:
+
+id: Unique identifier
+
+title: Article title
+
+context: The paragraph containing the answer
+
+question: The user query
+
+answer_text: The ground truth answer
+
+answer_start: Character offset in the context where the answer begins
+
+SQuAD is valuable for benchmarking extractive question answering models such as BERT and GPT, particularly for tasks requiring precise span detection within unstructured text.
+
